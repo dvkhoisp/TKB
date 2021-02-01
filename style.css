@@ -1,0 +1,113 @@
+body {
+  font-family: "Hachi Maru Pop", cursive;
+}
+
+.main {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  
+}
+.main::after{
+  background-image: url("bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.9;
+  
+}
+.main-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-body__head {
+  position: fixed;
+  left: 0;
+  top: 0px;
+  border: 5px solid red;
+  width: 1000px;
+  height: 300px;
+  background-color: yellow;
+  z-index: 2;
+}
+
+.main-body__list {
+  display: flex;
+}
+
+.main-body__item {
+  height: 50px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: pink;
+  border: 1px solid red;
+}
+.main-body__time{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction:column;
+  flex:1;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid red;
+
+
+}
+.main-body__listtime {
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid red;
+}
+.main-body__manager{
+   display: flex;
+   
+
+}
+.main-body__right{
+  z-index: 2;
+
+  position: fixed;
+  right: 0;
+  top:0;
+  bottom: 0;
+  border: 5px solid red;
+  width: 300px;
+  height: 300px;
+  background-color: gray;
+}
+.main-body__right-item{
+  padding:20px 0;
+  color:white;
+}
+.anime{
+  position:fixed;
+  top:0;left: 0;bottom: 0;right: 0;
+  background:url('a.jpg');
+  z-index: 10000;
+  opacity: 0.25;
+  animation: a 5s linear infinite;
+}
+@keyframes a{
+  0%{
+    background-position: 0 0;
+
+  }
+  100%{
+    background-position: 0 1000px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
