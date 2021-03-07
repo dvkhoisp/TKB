@@ -110,4 +110,9 @@ body {
     background-position: 0 1000px;
   }
 }
+.font{
+  color: lightseagreen;
+  /* font-weight: 1500; */
+  font-weight:bold;
+}
 /*# sourceMappingURL=style.css.map */
